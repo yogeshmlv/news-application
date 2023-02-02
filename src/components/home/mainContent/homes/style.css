@@ -1,0 +1,81 @@
+main .container{
+    display: flex;
+    justify-content: space-between;
+    /* height: 100vh; */
+}
+.mainContent{
+    width: 75%;
+}
+.sideContent{
+    width: 25%;
+}
+@media screen and (max-width:768px) {
+    main .container{
+       flex-direction: column;
+    }
+    .mainContent{
+        width: 100%;
+    }
+    .sideContent{
+        width: 100%;
+    }
+}
+
+/*------------------------Subscribe-------------------------*/
+.subscribe{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.subscribe h1{
+    text-align: left;
+    font-size: 20px;
+}
+.subscribe input{
+    width: 100%;
+    padding: 10px;
+}
+.subscribe button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+/*------------------------Subscribe-------------------------*/
+
+/*------------------Banner--------------------------------*/
+.banner{
+    margin: 40px 0;
+}
+.categories .catgeory1{
+position: relative;
+margin-bottom: 20px;
+padding: 10px;
+}
+/*------------------Banner--------------------------------*/
+
+/*-------------Gallery--------------------------------------*/
+
+.gallery .img{
+    width: 315px;
+    height: 200px;
+}
+.gallery img{
+    width: 315px;
+    height: 200px;
+    object-fit: cover;
+}
+/*-------------Gallery--------------------------------------*/
+
+@media screen and (max-width:768px){
+    .gallery .img
+    .gallery img{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
