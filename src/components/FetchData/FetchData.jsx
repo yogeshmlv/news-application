@@ -17,7 +17,7 @@ const FetchData = () => {
       setError(error.message);
     }
   };
-
+//Use Effect
   useEffect(() => {
     fetchData();
   }, []);
