@@ -1,13 +1,15 @@
 import React from 'react'
+import FetchData from '../FetchData/FetchData'
 import Discover from './discover/Discover'
 import Hero from './hero/Hero'
 import Home from './mainContent/homes/Home'
 const Homepages = () => {
   return (
     <>
-    <Hero/>
-    <Home/>
-    <Discover/>
+      <FetchData />
+      <Hero />
+      <Home />
+      <Discover />
     </>
   )
 }

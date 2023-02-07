@@ -29,6 +29,7 @@ const Popular = () => {
   }
   return (
     <>
+
       <section className='popular'>
         <Heading title='Popular' />
         <div className='content'>
@@ -41,7 +42,7 @@ const Popular = () => {
                       <div className='img'>
                         <img src={val.cover} alt='' />
                       </div>
-                      <div class='category category1'>
+                      <div class='catgeory catgeory1'>
                         <span>{val.catgeory}</span>
                       </div>
                     </div>

@@ -1,19 +1,18 @@
-import React,{useState} from 'react'
-import { hero } from '../../dummyData'
+import React, { useState } from 'react'
+import FetchData from '../../FetchData/FetchData'
 import Card from './Card'
 import "./hero.css"
-
 const Hero = () => {
-    const [items, setItems] = useState(hero)
+  const [items, setItems] = useState([FetchData]);
   return (
     <>
-    <section className='hero'>
+      <section className='hero'>
         <div className="container">
-            {items.map((item)=>{
-                return <Card key ={item.id} item={item} />
-            })}
+          {items.map((item) => {
+            return <Card key={item} item={item} />
+          })}
         </div>
-    </section>
+      </section>
     </>
   )
 }

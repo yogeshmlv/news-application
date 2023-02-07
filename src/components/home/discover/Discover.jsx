@@ -3,6 +3,8 @@ import Heading from '../../common/heading/Heading';
 import { discover } from '../../dummyData';
 import "./discover.css";
 const Discover = () => {
+
+    
   return (
     <>
     <section className='discover'>

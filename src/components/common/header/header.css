@@ -29,6 +29,16 @@ header li a:hover{
     display: none;
     border: none;
 }
+select{
+    display: flex;
+    position: relative;
+    float: right;
+    background-color: #ebe8e4;
+    transition: 0.5s;
+    max-width: 90%;
+    margin: auto;
+    
+}
 @media screen  and (max-width: 768px){
     .head .ad{
         display: none;
