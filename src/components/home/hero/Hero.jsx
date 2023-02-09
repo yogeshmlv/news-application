@@ -6,8 +6,8 @@ const Hero = () => {
   const [items, setItems] = useState([FetchData]);
   return (
     <>
-      <section className='hero'>
-        <div className="container">
+      <section className='hero1'>
+        <div className="container1">
           {items.map((item) => {
             return <Card key={item} item={item} />
           })}

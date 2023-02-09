@@ -6,7 +6,7 @@ import Home from './mainContent/homes/Home'
 const Homepages = () => {
   return (
     <>
-      <FetchData />
+      <FetchData/>
       <Hero />
       <Home />
       <Discover />

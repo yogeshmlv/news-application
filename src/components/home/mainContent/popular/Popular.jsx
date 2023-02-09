@@ -4,63 +4,61 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Heading from "../../../common/heading/Heading"
-import { popular } from "../../../dummyData"
-
-const Popular = () => {
+const Popular = ({ item}) => {
+  console.log(item);
   const settings = {
     className: "center",
     centerMode: false,
     infinite: true,
     centerPadding: "0",
-    slidesToShow: 2,
+    slidesToShow: 1,
     speed: 500,
-    rows: 4,
+    rows: 1,
     slidesPerRow: 1,
     responsive: [
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          rows: 4,
+          rows: 2,
         },
       },
     ],
   }
   return (
     <>
-
       <section className='popular'>
         <Heading title='Popular' />
         <div className='content'>
           <Slider {...settings}>
-            {popular.map((val) => {
+          {item.map((item) => {
               return (
                 <div className='items'>
                   <div className='box shadow'>
                     <div className='images row'>
                       <div className='img'>
-                        <img src={val.cover} alt='' />
+                        <img src={item?.urlToImage} alt='' />
                       </div>
                       <div class='catgeory catgeory1'>
-                        <span>{val.catgeory}</span>
+                        <span>{item?.source?.name}</span>
                       </div>
                     </div>
                     <div className='text row'>
-                      <h1 className='title'>{val.title.slice(0, 40)}...</h1>
+                      <h1 className='title'>{item.title.slice(0, 25)}...</h1>
                       <div className='date'>
                         <i class='fas fa-calendar-days'></i>
-                        <label>{val.date}</label>
+                        <label>{item?.publishedAt?.slice(0,10)}</label>
                       </div>
                       <div className='comment'>
                         <i class='fas fa-comments'></i>
-                        <label>{val.comments}</label>
+                        <label>{item?.url}</label>
                       </div>
                     </div>
                   </div>
                 </div>
               )
-            })}
+                })}
           </Slider>
         </div>
       </section>
