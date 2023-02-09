@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react'
 import axios from 'axios';
 import { useEffect } from 'react';
 import Card from '../home/hero/Card';
-import "./fetchdata.css"
 import { countryContext } from '../../App';
 const FetchData = () => {
   const [data, setData] = useState([]);
@@ -13,7 +12,7 @@ const country =useContext(countryContext)
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=954a08062c3140dcb6ac6f2574a7d5e5`);
+      const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=c81edd7bbab5412386d0a55cb38e42fa`);
       setData(response.data.articles);
       setLoading(false);
     } catch (error) {

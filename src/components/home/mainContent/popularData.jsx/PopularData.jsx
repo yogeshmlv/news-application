@@ -12,7 +12,7 @@ const PopularData = () => {
     const fetchData1 = async () => {
         console.log(country);
         try {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=business&apiKey=954a08062c3140dcb6ac6f2574a7d5e5
+            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=business&apiKey=c81edd7bbab5412386d0a55cb38e42fa
             `);
             console.log(response);
             setData(response.data.articles);
@@ -28,9 +28,9 @@ const PopularData = () => {
 
 
     return (
-        <section className='hero'>
+      
                             <Popular item={data} />
-        </section>
+     
     )
 }
 

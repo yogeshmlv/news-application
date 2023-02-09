@@ -1,10 +1,9 @@
 .hero{
-    margin: 5px 0;
-    color: white;
-    /* background-color: #0b9931; */
+    margin: 30px 0;
+    color: #fff;
 }
 .hero a{
-    color: rgb(252, 248, 248);
+    color: #fff;
 }
 .hero .box{
     position: relative;
@@ -15,7 +14,7 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 15;
+    top: 0;
     left: 0;
     z-index: -1;
 }
@@ -25,7 +24,6 @@
     grid-template-rows: repeat(8,6.6vh);
     grid-gap: 10px;
 }
-
 .hero .box:nth-child(1){
     grid-column-start: 1;
     grid-column-end: 5;
@@ -54,44 +52,24 @@
     font-weight: 500;
     margin: 10px 0;
     font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.505);
 }
 .hero .author span{
     font-size: 14px;
-    margin-right: 30px;
-    background-color: #2e1f2b;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.505);
 }
 .hero .text{
     position: absolute;
-    bottom: 5px;
+    bottom: 30px;
 }
 .hero .box:nth-child(1) h1{
     font-size: 28px;
-    margin-top: 200px;
-    background-color: rgba(0, 0, 0, 0.505);
-   
-}
-.hero .box:nth-child(2) h1{
-    /* font-size: 28px; */
-    margin-top: 70px;
-    background-color: rgba(0, 0, 0, 0.539);
-   
-}
-.hero .box:nth-child(3) h1{
-    /* font-size: 28px; */
-    margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.525);
-   
-}
-.hero .box:nth-child(4) h1{
-    /* font-size: 28px; */
-    margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.562);
-   
 }
 .hero .box:nth-child(1) .catgeory{
     background-color: crimson;
 }
-.hero .box:nth-child(2) .catgeory {
+.hero .box:nth-child(2) .catgeory{
     background-color: #0b9931;
 }
 .hero .box:nth-child(4) .catgeory{

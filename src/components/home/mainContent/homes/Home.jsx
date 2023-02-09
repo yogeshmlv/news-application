@@ -7,6 +7,7 @@ import Side from '../../sidecontent/side/Side'
 import "./style.css"
 import PpostData from '../ppostData/PpostData'
 import LifeData from '../lifedata/LifeData'
+import MusicData from '../musicData/MusicData'
 const Home = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const Home = () => {
             <PopularData/>
             <PpostData/>
             <LifeData/>
-            <Music/>
+            <MusicData/>
         </section>
         <section className="sideContent">
         <Side/>

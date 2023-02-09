@@ -1,42 +1,31 @@
 .popular .box {
-    /* background-color:; */
-    display: flex;
-    /* #18  copy*/
-    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
-    position: relative;
-    margin: 15px 15px 15px 0;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  }
-  .popular .images {
-    position: relative;
-    /* bottom: px; */
-    height: 170px;
-  }
-  .popular img {
-    width: 200%;
-    height: 300px;
-    object-fit: cover;
-  }
-  .popular .text  {
-    padding: 20px 0 0 20px;
-    margin: 0;
-    /* background-color: rgba(14, 13, 13, 0.361); */
-    color: white ;
-    font-weight: 700;
-    overflow: hidden;
-    white-space: nowrap; 
-     text-overflow: ellipsis;
-  }
-  .popular .date {
-    margin-top: 15px;
-    padding: 0 0 0 20px;
-  }
+  background-color: #fff;
+  display: flex;
+ 
+  position: relative;
+  margin: 15px 15px 15px 0;
   
-  .popular .comment {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 5px 0 0 20px;
-    margin-top: 5px;
-  }
-  
-  
-   
+}
+.popular .images {
+  position: relative;
+  height: 150px;
+}
+.popular img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.popular .text h1 {
+  padding: 20px 0 0 20px;
+  margin: 0;
+}
+.popular .date {
+  margin-top: 15px;
+  padding: 0 0 0 20px;
+}
+
+.popular .comment {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 0 0 20px;
+  margin-top: 5px;
+}

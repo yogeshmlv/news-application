@@ -1,20 +1,20 @@
 import React from 'react'
 import Heading from '../../common/heading/Heading';
-import { discover } from '../../dummyData';
+// import { discover } from '../../dummyData';
 import "./discover.css";
-const Discover = () => {
+const Discover = ({item}) => {
   return (
     <>
     <section className='discover'>
         <div className="container">
-            <Heading title="Discover"/>
+            <Heading title="Health News"/>
             <div className="content">
-            {discover.map((val)=>{
+            {item.map((val)=>{
                 return <div className="box">
                     <div className="img">
-                        <img src={val.cover} alt="" />
+                        <img src={val?.urlToImage} alt="" />
                     </div>
-                    <h1 className='title'>{val.title}</h1>
+                    <h1 className='title'>{val?.title?.slice(0, 15)}..</h1>
                 </div>
             })}
         </div>
