@@ -6,6 +6,7 @@ import Music from '../musics/Music'
 import Side from '../../sidecontent/side/Side'
 import "./style.css"
 import PpostData from '../ppostData/PpostData'
+import LifeData from '../lifedata/LifeData'
 const Home = () => {
   return (
     <>
@@ -13,12 +14,10 @@ const Home = () => {
         <div className="container">
         <section className="mainContent">
 
-
             <PopularData/>
             <PpostData/>
-            <Life/>
+            <LifeData/>
             <Music/>
-          
         </section>
         <section className="sideContent">
         <Side/>

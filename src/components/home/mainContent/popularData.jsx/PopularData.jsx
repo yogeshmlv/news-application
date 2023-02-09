@@ -12,7 +12,8 @@ const PopularData = () => {
     const fetchData1 = async () => {
         console.log(country);
         try {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=a496896dab75485583d336655cc410a7`);
+            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=business&apiKey=954a08062c3140dcb6ac6f2574a7d5e5
+            `);
             console.log(response);
             setData(response.data.articles);
             setLoading(false);

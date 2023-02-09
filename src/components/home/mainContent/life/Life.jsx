@@ -3,7 +3,7 @@ import "./life.css";
 import Slider from "react-slick";
 import Heading from '../../../common/heading/Heading';
 import { lifestyle } from '../../../dummyData';
-const Life = () => {
+const Life = ({item}) => {
     const settings = {
         dots: false,
         infinite: true,
@@ -25,36 +25,40 @@ const Life = () => {
       
   return (
     <>
-     <section className='popularPost life'>
-                <Heading title='Life Style' />
-                <div className="content">
-                <Slider {...settings}>
-                {lifestyle.map((val) => {
-                    return (
-                        
-                            <div className="box shadow">
-                                <div className="images"><div className="img">
-                                    <img src={val.cover} alt="" />
-                                </div>
-                                <div className="catgeory catgeory1">
-                                    <span>{val.catgeory}</span>
-                                </div>
-                                </div>
-                                <div className="text row">
-                                    <h1 className='title'>{val.title.slice(0,40)}...</h1>
-                                    <div className="date">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                        <label htmlFor="">{val.date}</label>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        
-                    )
-                })}
-                </Slider>
+     <section className='popular'>
+        <Heading title='Sports' />
+        <div className='content'>
+          <Slider {...settings}>
+          {item.map((item) => {
+              return (
+                <div className='items'>
+                  <div className='box shadow'>
+                    <div className='images row'>
+                      <div className='img'>
+                        <img  className='hello' src={item?.urlToImage} alt='' />
+                      </div>
+                      <div class='catgeory catgeory1'>
+                        <span>{item?.source?.name}</span>
+                      </div>
+                    </div>
+                    <div className='text row'>
+                      <h1 className='title'>{item.title.slice(0, 25)}...</h1>
+                      <div className='date'>
+                        <i class='fas fa-calendar-days'></i>
+                        <label>{item?.publishedAt?.slice(0,10)}</label>
+                      </div>
+                      <div className='comment'>
+                        <i class='fas fa-comments'></i>
+                        <label>{item?.url}</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
+              )
+                })}
+          </Slider>
+        </div>
+      </section>
     </>
   )
 }

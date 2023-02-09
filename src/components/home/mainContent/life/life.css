@@ -8,3 +8,7 @@
 .popularPost .text{
     padding: 20px;
 }
+.hello{
+   width: 250% !important;
+   height: 100% !important;
+}

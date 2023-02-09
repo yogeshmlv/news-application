@@ -1,9 +1,9 @@
 import React from 'react'
 import axios from 'axios';
-import { useState, useEffect,useContext } from 'react';
-import { countryContext } from '../../../../App'
-import Ppost from '../ppost/Ppost'
-const PpostData = () => {
+import { countryContext } from '../../../../App';
+import Life from '../life/Life';
+import { useState,useContext,useEffect } from 'react';
+const LifeData = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
@@ -12,7 +12,7 @@ const PpostData = () => {
     const fetchData1 = async () => {
         console.log(country);
         try {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=entertainment&apiKey=954a08062c3140dcb6ac6f2574a7d5e5
+            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=sport&apiKey=954a08062c3140dcb6ac6f2574a7d5e5
             `);
             console.log(response);
             setData(response.data.articles);
@@ -29,9 +29,9 @@ const PpostData = () => {
 
   return (
     <section className='hero'>
-                            <Ppost item={data} />
+                            <Life item={data} />
         </section>
   )
 }
 
-export default PpostData;
+export default LifeData

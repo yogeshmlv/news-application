@@ -29,7 +29,7 @@ const Popular = ({ item}) => {
   return (
     <>
       <section className='popular'>
-        <Heading title='Popular' />
+        <Heading title='Business' />
         <div className='content'>
           <Slider {...settings}>
           {item.map((item) => {
