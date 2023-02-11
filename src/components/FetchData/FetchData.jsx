@@ -12,7 +12,7 @@ const country =useContext(countryContext)
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=c81edd7bbab5412386d0a55cb38e42fa`);
+      const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${process.env.REACT_APP_API_KEY}`);
       setData(response.data.articles);
       setLoading(false);
     } catch (error) {

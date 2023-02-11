@@ -2,9 +2,9 @@ import React from 'react'
 import "./side.css";
 import Heading from "../../../common/heading/Heading"
 import SocialMedia from '../social/SocialMedia';
-import Tpost from '../tppost/Tpost';
 import { gallery } from '../../../dummyData';
 import Slider from "react-slick";
+import ScienceData from '../sciencedata/ScienceData';
 
 
 const Side = () => {
@@ -15,7 +15,7 @@ const Side = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
       };
-    const category=["world","travel","sport","fun","health","fashion","business","technology"]
+    const category=["Business","Technology","Sports","Health","Science","Entertainment","General"]
 
   return (
     <>
@@ -36,7 +36,7 @@ const Side = () => {
     <img src="./images/slidebar-banner.jpg" alt="" />
 </section>
 
-<Tpost/>
+<ScienceData/>
 
 
 <section className='categories'>
@@ -59,7 +59,7 @@ const Side = () => {
                 <img src={val.cover} alt="" />
             </div>
         )
-    })}
+     })}
      </Slider>
 </section>
     </>

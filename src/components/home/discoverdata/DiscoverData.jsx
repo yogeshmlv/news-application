@@ -12,7 +12,7 @@ const DiscoverData = () => {
   
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=health&apiKey=c81edd7bbab5412386d0a55cb38e42fa&page=1&pageSize=6`);
+        const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=health&apiKey=${process.env.REACT_APP_API_KEY}&page=1&pageSize=6`);
         setData(response.data.articles);
         setLoading(false);
       } catch (error) {

@@ -1,24 +1,23 @@
 import React from "react"
-
 import Heading from "../../../common/heading/Heading"
-import { tpost } from "../../../dummyData"
 import "./tpost.css"
 
-const Tpost = () => {
+const Tpost = ({item}) => {
   return (
     <>
       <section className='tpost'>
-        <Heading title='Tiktok post' />
-        {tpost.map((val) => {
+        <Heading title='Science News'/>
+        {item.map((val) => {
           return (
             <div className='box flexSB'>
               <div className='img'>
-                <img src={val.cover} alt='' />
+                <img src={val.urlToImage} alt='' />
               </div>
               <div className='text'>
-                <h1 className='title'>{val.title.slice(0, 35)}...</h1>
-                <span>a year ago</span>
+                <h1 className='title'>{val.title.slice(0, 30)}...</h1>
+                <span>A Days Ago</span>
               </div>
+             
             </div>
           )
         })}

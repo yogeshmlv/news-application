@@ -1,9 +1,10 @@
 import React from 'react'
+import Tpost from '../tppost/Tpost';
 import axios from 'axios';
+import { useState, useEffect,useContext } from 'react';
 import { countryContext } from '../../../../App';
-import Life from '../life/Life';
-import { useState,useContext,useEffect } from 'react';
-const LifeData = () => {
+
+const ScienceData = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
@@ -12,7 +13,7 @@ const LifeData = () => {
     const fetchData1 = async () => {
         console.log(country);
         try {
-            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=sport&apiKey=${process.env.REACT_APP_API_KEY}
+            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=science&apiKey=${process.env.REACT_APP_API_KEY}&page=1&pageSize=4
             `);
             console.log(response);
             setData(response.data.articles);
@@ -28,10 +29,8 @@ const LifeData = () => {
 
 
   return (
-    <>
-                            <Life item={data} />
-   </>
+    <Tpost item={data} />
   )
 }
 
-export default LifeData
+export default ScienceData

@@ -8,37 +8,36 @@ const Footer = () => {
         <div className='container'>
           <div className='box logo'>
             <img src='../images/tech-logo-footer.png' alt='' />
-            <p>Busan is an amazing magazine Blogger theme that is easy to customize for your needs</p>
+            <p>HD News is an Indian English-language free-to-air television news channel owned by  Aidigitek Pvt.Limited. The news channel was launched in 2023</p>
             <i className='fa fa-envelope'></i>
-            <span> hello@yogesh.com </span> <br />
+            <span> news@aidigitek.com </span> <br />
             <i className='fa fa-headphones'></i>
-            <span> +91 8318561551</span>
+            <span> +91 9990033551 </span>
           </div>
           <div className='box'>
-            <h3>SPORT</h3>
+            <h3>SCIENCE</h3>
             <div className='item'>
               <img src='../images/hero/hero1.jpg' alt='' />
-              <p>Google To Boost Android Security In Few Days</p>
+              <p>NASA telescope captures hidden light shows on the Sun</p>
             </div>
             <div className='item'>
               <img src='../images/hero/hero2.jpg' alt='' />
-              <p>Cespedes play the winning Baseball Game</p>
+              <p>Astronomers find out why black holes twinkle</p>
             </div>
           </div>
           <div className='box'>
-            <h3>CRICKET</h3>
+            <h3>GENERAL</h3>
             <div className='item'>
               <img src='../images/hero/hero3.jpg' alt='' />
-              <p>US Promises to give Intel aid to locate the soldiers</p>
+              <p>LIVE: PM Modi inaugurates UP Global Investors Summit 2023 in Lucknow</p>
             </div>
             <div className='item'>
               <img src='../images/hero/hero1.jpg' alt='' />
-              <p>Renewable energy dead as industry waits for Policy</p>
+              <p>Adani to rock Parliament again: Oppn seeks discussion over LIC and SBI </p>
             </div>
           </div>
           <div className='box'>
             <h3>LABELS</h3>
-            {/*<i className='fa fa-chevron-right'></i>*/}
             <ul>
               <li>
                 <span>Boxing</span> <label>(5)</label>
@@ -58,9 +57,13 @@ const Footer = () => {
       </footer>
       <div className='legal  '>
         <div className='container flexSB'>
-          <p>© all rights reserved</p>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+       <a href="https://www.linkedin.com/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
           <p>
-            made with <i className='fa fa-heart'></i> by Yogesh Singh
+            <p>© Copyright 2023 AiDigitek All Rights Reserved</p>
           </p>
         </div>
       </div>
